@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Gentleman 로그인</title>
+    <title>Gentleman 마이페이지</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
@@ -12,7 +12,6 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />  
-</head>
 
     <script>
         $(function() {
@@ -25,14 +24,57 @@
         #Pic { background: url(images/Community03.jpg); background-attachment: fixed; background-size: cover; width: 100%; height: 550px; overflow: hidden; }
         #Pic > h1 { width: 100%; text-align: center; color:white; font-size: 30px; position: relative; top:50%; text-shadow: 1px 1px 15px #ababab;}
         #Pic > p { width: 100%; text-align: center; color:white; position: relative; top:51%; font-size: 24px; text-shadow: 1px 1px 15px #ababab;}
+        #Mypage { width: 70%; margin: 0 auto; }
+        h2 { margin-top: 6%; letter-spacing: 1px; border-bottom: 1px solid black; padding-bottom: 1%;}
+        #Mypage > .First::after { content: ""; display: block; clear: both;}
+        #Mypage > .First { margin-top: 2%;}
+        #Mypage > .First > .left { width: 30%; float: left;}
+        #Mypage > .First > .left img { width: 80%;}
+        #Mypage > .First > .right { width: 70%; float: right;}
+        #Mypage > .First > .right > p { width: 100%; padding: 1.5%;}
+        #Mypage > .First > .right > p > .right-title {border: 1px solid black; width: 20%; display: inline-block; text-align: center;}
+        #Mypage > .First > .right > p:nth-child(2) { position: relative;}
+        
+        #Mypage > .First > .right > p > .right-text {border: 1px solid black; width: 79%; display: inline-block;}
+        
     </style>
+    </head>
 <body>
     <div id="header"></div>
     <div id="wrap">
     
         <div id="Pic">
-            <h1>Community</h1>
+            <h1>Member Mypage</h1>
             <p>저희 젠틀맨은 항상 최고의 품질을 유지합니다.</p>
+        </div>
+        
+        <div id="Mypage">
+           <h2>회원정보</h2>
+            <div class="First">
+               
+                <div class="left">
+                    <img src="images/MypageUser.jpg" alt="회원정보 사진">
+                </div>
+                
+                <div class="right">
+                    <p><span class="right-title">회원명</span> <span class="right-text">Gentleman007</span></p>
+                    <p><span class="right-title">코멘트</span> <span class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem eveniet doloremque nobis laudantium facilis quia quaerat beatae nostrum quas, soluta ab atque similique, accusamus id provident ex, repudiandae maiores.</span></p>
+                    <p><span class="right-title">주소</span> <span class="right-text">경기도 경기도 경기도 1000동 101호</span></p>
+                    <p><span class="right-title">이메일</span> <span class="right-text">sql5000@naver.com</span></p>
+                </div>
+                
+                <div class="rightIn">
+                    
+                </div>
+            </div>
+            <h2>제품목록</h2>
+            <div class="Second">
+                
+            </div>
+            <h2>상담내역</h2>
+            <div class="Third">
+                
+            </div>
         </div>
         
     <footer id="footer"></footer>
