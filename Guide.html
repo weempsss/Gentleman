@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Gentleman Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />  
+
+    <script>
+         $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+
+        });
+    </script>
+    
+    <style>
+        #Pic { background: url(images/bbb.jpg); background-attachment: fixed; background-size: cover; width: 100%; height: 550px; overflow: hidden; }
+        #Pic > h1 { width: 100%; text-align: center; color:white; font-size: 65px; position: relative; top:50%;}
+        #Pic > p { width: 100%; text-align: center; color:white; position: relative; top:50%;}
+        .FirstLine { background: url(images/showcase1.jpg) 0 0 no-repeat; height: 1000px; background-size: cover;}
+        .WhiteBoard { width: 100%; }
+        .WhiteBoard > .BoardStep1 { width: 80%; margin: 0 auto; margin-top: 50px; margin-bottom: 50px; position: relative;}
+        .WhiteBoard > .BoardStep1 > img { width: 500px;}
+        .WhiteBoard > .BoardStep1 > .TextBox { position: absolute; top:25%; left:45%; display: inline-block; height: 250px;}
+        .WhiteBoard > .BoardStep1 > .TextBox > h2 { font-size: 60px; letter-spacing: 2.5px;}
+        .WhiteBoard > .BoardStep1 > .TextBox > p { margin-top: 2%; font-size: 20px;}
+        .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(2) { margin-top: 3%; font-size: 25px; letter-spacing: 1px; padding-bottom: 2%; border-bottom: 2px solid black;}
+        .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(3) { margin-top: 5%;}
+        .WhiteBoard > .BoardStep2 { width: 80%; margin: 0 auto; margin-top: 50px; text-align: right; position: relative;}
+        .WhiteBoard > .BoardStep2 > img { width: 500px; }
+        .WhiteBoard > .BoardStep2 > .TextBox { position: absolute; top:25%; left:15%; display: inline-block; height: 250px;}
+        .WhiteBoard > .BoardStep2 > .TextBox > h2 { font-size: 60px; letter-spacing: 2.5px; }
+        .WhiteBoard > .BoardStep2 > .TextBox > p { margin-top: 2%; font-size: 20px;}
+        .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(2) { margin-top: 3%; font-size: 25px; letter-spacing: 1px; padding-bottom: 2%; border-bottom: 2px solid black;}
+        .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(3) { margin-top: 5%;}
+        .WhiteBoard > .BoardStep3 { width: 80%; margin: 0 auto; margin-top: 50px; position: relative;}
+        .WhiteBoard > .BoardStep3 > img { width: 500px;}
+        .WhiteBoard > .BoardStep3 > .TextBox { position: absolute; top:25%; left:45%; display: inline-block; height: 250px;}
+        .WhiteBoard > .BoardStep3 > .TextBox > h2 { font-size: 60px; letter-spacing: 2.5px;}
+        .WhiteBoard > .BoardStep3 > .TextBox > p { margin-top: 2%; font-size: 20px;}
+        .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(2) { margin-top: 3%; font-size: 25px; letter-spacing: 1px; padding-bottom: 2%; border-bottom: 2px solid black;}
+        .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(3) { margin-top: 5%;}
+        .WhiteBoard > .BoardStep4 { width: 80%; margin: 0 auto; margin-top: 50px; text-align: right; position: relative;}
+        .WhiteBoard > .BoardStep4 > img { width: 500px;}
+        .WhiteBoard > .BoardStep4 > .TextBox { position: absolute; top:25%; left:15%; display: inline-block; height: 250px;}
+        .WhiteBoard > .BoardStep4 > .TextBox > h2 { font-size: 60px; letter-spacing: 2.5px;}
+        .WhiteBoard > .BoardStep4 > .TextBox > p { margin-top: 2%; font-size: 20px;}
+        .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(2) { margin-top: 3%; font-size: 25px; letter-spacing: 1px; padding-bottom: 2%; border-bottom: 2px solid black;}
+        .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(3) { margin-top: 5%;}
+        .WhiteBoard > .BoardStep4 { margin-bottom: 50px;}
+        
+        @media all and (min-width: 1024px) and (max-width:1630px) {
+            .WhiteBoard img { opacity: 0.7;}
+        }
+        
+        @media all and (min-width: 1024px) and (max-width: 1206px) {
+            .WhiteBoard > .BoardStep1 > .TextBox > p { font-size: 17.4px;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p { font-size: 18px;}
+            .WhiteBoard > .BoardStep3 > .TextBox > p { font-size: 16.9px; margin-top: 2%;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p { font-size: 18px;}
+        }
+        
+        @media all and (min-width: 740px) and (max-width: 1023px) {
+            #Pic {  height: 450px;  }
+            .WhiteBoard > .BoardStep1 > .TextBox { background: white; padding: 25px; height: 375px; left:20%; opacity: 0.9;}
+            .WhiteBoard > .BoardStep1 > .TextBox > p {width: 520px;}
+            .WhiteBoard > .BoardStep2 > .TextBox { background: white; padding: 25px; height: 375px; left:0%; opacity: 0.9;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p {width: 620px;}
+            .WhiteBoard > .BoardStep3 > .TextBox { background: white; padding: 25px; height: 375px; left:20%; opacity: 0.9;}
+            .WhiteBoard > .BoardStep3 > .TextBox > p {width: 530px;}
+            .WhiteBoard > .BoardStep4 > .TextBox { background: white; padding: 25px; height: 375px; left:0%; opacity: 0.9;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p {width: 620px;}
+        }
+        
+        @media all and (min-width:500px) and (max-width: 739px) { 
+            #Pic {  width: 100%; height: 350px;  }
+            .WhiteBoard > .BoardStep1 { width: 100%;}
+            .WhiteBoard > .BoardStep1 img { opacity: 0.7; width: 300px;}
+            .WhiteBoard > .BoardStep1 > .TextBox { padding: 0px; height: 300px; right:0%;}
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(2) { border-bottom:none; font-size: 20px;}
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(3) { width: 240px; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 30px;}
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(4) { width: 240px; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(5) { width: 260px; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep1 > .TextBox > h2 { position: absolute; left:0px; top:-103px; background: black; color:white; padding: 10px; padding-left: 30px; padding-right: 30px; text-align: center; font-size: 40px;}
+            
+            .WhiteBoard > .BoardStep2 { width: 100%;}
+            .WhiteBoard > .BoardStep2 img { opacity: 0.7; width: 300px;}
+            .WhiteBoard > .BoardStep2 > .TextBox { padding: 0px; height: 300px; left:0%; margin-left: 25px;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(2) { border-bottom:none; font-size: 20px;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(3) { width: 280px; text-align: left; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 30px;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(4) { width: 280px; text-align: left; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(5) { width: 300px; text-align: left; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep2 > .TextBox > h2 { position: absolute; left:0px; top:-103px; background: black; color:white; padding: 10px; padding-left: 30px; padding-right: 30px; text-align: center; font-size: 40px;}
+            
+            .WhiteBoard > .BoardStep3 { width: 100%;}
+            .WhiteBoard > .BoardStep3 img { opacity: 0.7; width: 300px;}
+            .WhiteBoard > .BoardStep3 > .TextBox { padding: 0px; height: 300px; right:0%;}
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(2) { border-bottom:none; font-size: 19px;}
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(3) { width: 240px; font-size: 17px; line-height: 30px; margin-left: 0px; margin-top: 20px;}
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(4) { width: 240px; font-size: 17px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(5) { width: 260px; font-size: 17px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep3 > .TextBox > h2 { position: absolute; left:0px; top:-89px; background: black; color:white; padding: 10px; padding-left: 30px; padding-right: 30px; text-align: center; font-size: 40px;}
+            
+            .WhiteBoard > .BoardStep4 { width: 100%;}
+            .WhiteBoard > .BoardStep4 img { opacity: 0.7; width: 300px;}
+            .WhiteBoard > .BoardStep4 > .TextBox { padding: 0px; height: 300px; left:0%; margin-left: 25px;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(2) { border-bottom:none; font-size: 20px;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(3) { width: 280px; text-align: left; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 30px;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(4) { width: 300px; text-align: left; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(5) { width: 300px; text-align: left; font-size: 18px; line-height: 30px; margin-left: 0px; margin-top: 10px;}
+            .WhiteBoard > .BoardStep4 > .TextBox > h2 { position: absolute; left:0px; top:-103px; background: black; color:white; padding: 10px; padding-left: 30px; padding-right: 30px; text-align: center; font-size: 40px;}
+        }
+        
+        @media all and (max-width:499px) {
+            #Pic {  width: 100%; height: 250px;  background-size:100% 50%;}
+            #Pic > h1 {  font-size: 45px; top:58%;}
+            #Pic > p {  font-size: 10px; top:58%;}
+            .WhiteBoard > .BoardStep1 { width: 90%}
+            .WhiteBoard > .BoardStep1 img {  width: 340px;}
+            .WhiteBoard > .BoardStep1 > .TextBox { position: absolute; top:100px; width: 100%; margin-left: 5%;}
+            .WhiteBoard > .BoardStep1 > .TextBox:hover { background: white; opacity: 0.8; padding: 10px; border:none;}
+            .WhiteBoard > .BoardStep1 > .TextBox:hover p { color:black; text-shadow: none;}
+            .WhiteBoard > .BoardStep1 > .TextBox:hover p:nth-child(3) { margin-top: 20px}
+            .WhiteBoard > .BoardStep1 > .TextBox:hover p:nth-child(4) { margin-top: 10px}
+            .WhiteBoard > .BoardStep1 > .TextBox:hover p:nth-child(5) { margin-top: 10px}
+            .WhiteBoard > .BoardStep1 > .TextBox > h2 { font-size: 40px; font-family: "NanumSqauerEB"; text-shadow: 1px 1px 1px white;}
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(2) { border-bottom: none; font-size: 17.5px; }
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(3) { width: 280px; margin-top: 25px}
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(4) { width: 280px; margin-top: 25px}
+            .WhiteBoard > .BoardStep1 > .TextBox > p:nth-child(5) { width: 280px; margin-top: 25px}
+            .WhiteBoard > .BoardStep1 > .TextBox > p { font-size: 18px; color:white; text-shadow: 1px 1px 5px black; opacity: 0.8;}
+            
+            .WhiteBoard > .BoardStep2 { width: 90%}
+            .WhiteBoard > .BoardStep2 img {  width: 340px;}
+            .WhiteBoard > .BoardStep2 > .TextBox { position: absolute; left:0; top:100px; width: 100%; margin-left: 5%;}
+            .WhiteBoard > .BoardStep2 > .TextBox:hover { background: white; opacity: 0.8; padding: 10px;}
+            .WhiteBoard > .BoardStep2 > .TextBox:hover p { color:black; text-shadow: none;}
+            .WhiteBoard > .BoardStep2 > .TextBox:hover p:nth-child(3) { margin-top: 20px}
+            .WhiteBoard > .BoardStep2 > .TextBox:hover p:nth-child(4) { margin-top: 10px}
+            .WhiteBoard > .BoardStep2 > .TextBox:hover p:nth-child(5) { margin-top: 10px}
+            .WhiteBoard > .BoardStep2 > .TextBox > h2 { font-size: 40px; font-family: "NanumSqauerEB"; text-align: left; text-shadow: 1px 1px 1px white;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(2) { border-bottom: none; font-size: 17.5px; text-align: left;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(3) { width: 280px; margin-top: 25px; text-align: left;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(4) { width: 280px; margin-top: 25px; text-align: left;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p:nth-child(5) { width: 280px; margin-top: 25px; text-align: left;}
+            .WhiteBoard > .BoardStep2 > .TextBox > p { font-size: 18px; color:white; text-shadow: 1px 1px 5px black; opacity: 0.8;}
+            
+            .WhiteBoard > .BoardStep3 { width: 90%}
+            .WhiteBoard > .BoardStep3 img {  width: 340px;}
+            .WhiteBoard > .BoardStep3 > .TextBox { position: absolute; top:50px; width: 100%; margin-left: 5%;}
+            .WhiteBoard > .BoardStep3 > .TextBox:hover { background: white; opacity: 0.8; padding: 10px;}
+            .WhiteBoard > .BoardStep3 > .TextBox:hover p { color:black; text-shadow: none;}
+            .WhiteBoard > .BoardStep3 > .TextBox:hover p:nth-child(3) { margin-top: 20px}
+            .WhiteBoard > .BoardStep3 > .TextBox:hover p:nth-child(4) { margin-top: 10px}
+            .WhiteBoard > .BoardStep3 > .TextBox:hover p:nth-child(5) { margin-top: 10px}
+            .WhiteBoard > .BoardStep3 > .TextBox > h2 { font-size: 40px; font-family: "NanumSqauerEB"}
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(2) { border-bottom: none; font-size: 17.5px; }
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(3) { width: 280px; margin-top: 15px}
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(4) { width: 280px; margin-top: 15px}
+            .WhiteBoard > .BoardStep3 > .TextBox > p:nth-child(5) { width: 280px; margin-top: 15px}
+            .WhiteBoard > .BoardStep3 > .TextBox > p { font-size: 18px; color:white; text-shadow: 1px 1px 5px black; opacity: 0.8;}
+            
+            .WhiteBoard > .BoardStep4 { width: 90%}
+            .WhiteBoard > .BoardStep4 img {  width: 340px;}
+            .WhiteBoard > .BoardStep4 > .TextBox { position: absolute; left:0; top:100px; width: 100%; margin-left: 5%;}
+            .WhiteBoard > .BoardStep4 > .TextBox:hover { background: white; opacity: 0.8; padding: 10px; height: 290px;}
+            .WhiteBoard > .BoardStep4 > .TextBox:hover p { color:black; text-shadow: none;}
+            .WhiteBoard > .BoardStep4 > .TextBox:hover p:nth-child(3) { margin-top: 20px}
+            .WhiteBoard > .BoardStep4 > .TextBox:hover p:nth-child(4) { margin-top: 10px}
+            .WhiteBoard > .BoardStep4 > .TextBox:hover p:nth-child(5) { margin-top: 10px}
+            .WhiteBoard > .BoardStep4 > .TextBox > h2 { font-size: 40px; font-family: "NanumSqauerEB"; text-align: left;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(2) { border-bottom: none; font-size: 17.5px; text-align: left;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(3) { width: 280px; margin-top: 25px; text-align: left;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(4) { width: 285px; margin-top: 25px; text-align: left;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p:nth-child(5) { width: 280px; margin-top: 25px; text-align: left;}
+            .WhiteBoard > .BoardStep4 > .TextBox > p { font-size: 18px; color:white; text-shadow: 1px 1px 5px black; opacity: 0.8;}
+            
+            .WhiteBoard > .BoardStep1 > .TextBox { padding: 0px; height: 300px; left:0%;}
+            .WhiteBoard > .BoardStep2 > .TextBox { padding: 0px; height: 300px; left:0%;}
+            .WhiteBoard > .BoardStep3 > .TextBox { padding: 0px; height: 300px; left:0%;}
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="wrap">
+       
+       <!-- 헤더구역    -->
+       
+        <div id="Pic">
+            <h1>ABOUT</h1>
+            <p>저희 젠틀맨은 항상 최고의 품질을 유지합니다.</p>
+        </div>
+        
+        <div class="WhiteBoard">
+            <div class="BoardStep1">
+                <img src="images/0a5685180bee273fec9fab16969906db.jpg" alt="">
+                
+                <div class="TextBox">
+                    <h2>Free</h2>
+                    <p>신는 순간 신사로 만들어주는 명품 브랜드</p>
+                    <p>발이 작아서 때로는 발이 커서 사이즈 고민은 이제 그만!</p>
+                    <p>멋스런 디자인의 남성 슈즈의 다양한 스타일을 제안하며,</p>
+                    <p>높은 품질과 실용성을 반영하여 상쾌한 하루를 시작할것입니다.</p>
+                </div>
+            </div>
+            
+            <div class="BoardStep2">
+                <img src="images/f330556af5a9fdf73f492547a54fd966.jpg" alt="">
+                
+                <div class="TextBox">
+                    <h2>Pride</h2>
+                    <p>신는 순간 신사로 만들어주는 명품 브랜드</p>
+                    <p>Gentleman은 당신의 평범한 일상에 특별한 기품을 더해 줄 것입니다.</p>
+                    <p>진정한 남자의 멋은 좋은 신발을 신는 것으로 부터 시작하며, 다양한 품목과</p>
+                    <p>완성도 높은 퀄리티로 만족하고 기품있고 멋진 하루를 시작할것입니다.</p>
+                </div>
+            </div>
+            
+            <div class="BoardStep3">
+                <img src="images/1_bigcover_05_11_2019_data.jpg" alt="">
+                
+                <div class="TextBox">
+                    <h2>Smart</h2>
+                    <p>신는 순간 신사로 만들어주는 명품 브랜드</p>
+                    <p>멋진 수제화를 찾고있다면 평소에 선택이 까다로운 당신을 위해  </p>
+                    <p>주문과 동시에 제작을 시작하여 훌룡한 품질을 유지하며</p>
+                    <p>종류, 색상, 굽의 높이까지 빈틈없는 당신의 훌룡한 파트너입니다.</p>
+                </div>
+            </div>
+            
+            <div class="BoardStep4">
+                <img src="images/0e826524090e6a33167896dcf345eb56.jpg" alt="">
+                
+                <div class="TextBox">
+                    <h2>Happy</h2>
+                    <p>신는 순간 신사로 만들어주는 명품 브랜드</p>
+                    <p>행복이란 큰것이 아닙니다. 행복이란 다른곳에 있지 않습니다. </p>
+                    <p>다양한 품질에 보는 눈이 즐겁고 천연소재를 사용해 안심하고 사용할 수 있고</p>
+                    <p>당신의 마음을 사로잡은 수제화를 만나 행복하고 다 당신의 행복입니다.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+        <!-- 하단구역  -->
+        <footer id="footer"></footer>
+    </div>
+</body></html>

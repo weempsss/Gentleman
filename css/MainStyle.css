@@ -1,0 +1,1601 @@
+@charset "utf-8";
+
+#fullpage {
+    width: 100%;
+    height: 100%;
+}
+
+#page1 {
+    position: relative;
+    top: 0;
+}
+
+#page1 .bg1 {
+    background: url(../images/banner/test63.jpg);
+    background-size: cover;
+}
+
+#page1 .bg2 {
+    background: url(../images/banner/test52.jpg);
+    background-size: cover
+}
+
+#page1 .bg3 {
+    background: url(../images/banner/test56.jpg);
+    background-size: cover;
+}
+
+#page2 {
+    background: #e6d7c6;
+}
+
+#page3 {
+    background: #e1e1dd;
+}
+
+#page4 {
+    background: #f4f4ed;
+}
+
+.pages {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#navTop {
+    position: fixed;
+    height: 300px;
+    width: 60px;
+    margin-left: 10px;
+    top: 20%;
+    left: 10px;
+    z-index: 10;
+}
+
+#navTop > ul {
+    margin-left: 10px;
+    background: #876c4c;
+}
+
+#navTop > ul > li {
+    width: 50px;
+}
+
+#navTop > ul > li > a {
+    color: white;
+    font-size: 15.5px;
+}
+
+#navTop > ul > li > a > span {
+    display: none;
+}
+
+
+#navTop > ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#navTop > ul > li {
+    float: left;
+}
+
+#navTop > ul > li > a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#navTop > ul > li.active {
+    background: black;
+}
+
+#navTop > ul > li.active a {
+    font-size: 22px
+}
+
+#navTop > ul > li > a > span {
+    display: none;
+    font-weight: 100
+}
+
+#navTop > ul > li:hover {
+    width: 200px;
+    text-align: center;
+    background: black;
+}
+
+
+#navTop > ul > li:hover span {
+    display: inline-block
+}
+
+
+#navTop > ul > li.active > a {
+    color: white;
+    font-weight: bold;
+}
+
+.main_cmt {
+    width: 400px;
+    margin-left: 100px;
+}
+
+.main_cmt p {
+    text-shadow: 1px 1px 1px #292929;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main_cmt p:nth-child(1) {
+    font-size: 4em;
+}
+
+.main_cmt p:nth-child(2) {
+    font-size: 2em;
+}
+
+.main_cmt a {
+    width: 150px;
+    border: 1px solid #fff;
+    background: none;
+    line-height: 45px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.main_cmt a:hover {
+    background: #fff;
+    color: #000;
+}
+
+#page2 div.onview {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#page2 div.onview.mactive {
+    opacity: 1;
+    transform: translateX(100px);
+}
+
+#page3,
+#page4 {
+    padding: 0px 0 0px calc(50% - 50px);
+}
+
+/* top */
+#fullpage > .section > .top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 39px;
+    z-index: 150;
+}
+
+.top > ul {
+    background-color: #262626;
+}
+
+.top > ul > li {
+    float: right;
+    font-size: 12px;
+    padding: 30px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+}
+
+.top > ul > li > a {
+    color: white;
+}
+
+.top > ul > li:nth-child(1) {
+    margin-right: 5px;
+    padding-left: 3px;
+}
+
+.top > ul > li:nth-child(2) {
+    padding-left: 3px;
+}
+
+.top > ul > li:nth-child(3) {
+    padding-left: 3px;
+}
+
+.top > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.top > ul > li > a:hover {
+    color: goldenrod;
+}
+
+/* id#nav */
+#fullpage > .section > .naviga {
+    background: #fafafa;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 10;
+}
+
+#fullpage > .section > .naviga > .leftNav {
+    float: left;
+    width: 100%;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NavigaPic {
+    float: left;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NavigaPic > a > img {
+    margin-top: 6%;
+    margin-left: 14%;
+}
+
+#fullpage > .section > .naviga > .leftNav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li {
+    float: right;
+    width: 9%;
+    font-size: 1.2em;
+    line-height: 85px;
+    text-align: center;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) {
+    font-family: "NanumGothic ExtraBold"
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(8) {
+    font-family: "NanumGothic ExtraBold"
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul {
+    display: none;
+    background: #75552e;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    z-index: 10;
+    height: 60px;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li {
+    float: left;
+    width: 10%;
+    height: 60px;
+    line-height: 60px;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li > a {
+    font-size: 18px;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+}
+
+#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li:nth-child(1) {
+    margin-left: 30%;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView {
+    display: none;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li {
+    float: right;
+    width: 9%;
+    font-size: 1.2em;
+    line-height: 85px;
+    text-align: center;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li:nth-child(1) {
+    font-family: "NanumGothic ExtraBold"
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li:nth-child(8) {
+    font-family: "NanumGothic ExtraBold"
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li:nth-child(1) > ul {
+    /*display: none;*/
+    background: #75552e;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    z-index: 10;
+    height: 60px;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li:nth-child(1) > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li:nth-child(1) > ul > li {
+    float: left;
+    width: 10%;
+    /*text-align: center;*/
+    height: 60px;
+    line-height: 60px;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li:nth-child(1) > ul > li > a {
+    font-size: 18px;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+}
+
+#fullpage > .section > .naviga > .leftNav > .TabletView > li:nth-child(1) > ul > li:nth-child(1) {
+    margin-left: 30%;
+}
+
+#fullpage > .section > .naviga > .rightNav > .NavMenu > a > img {
+    display: none;
+    float: right;
+}
+
+#fullpage > .section > .naviga > .rightNav > .NavMenu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > .section > .naviga > .leftNav > ul > li:nth-child(1) > ul > li > a:hover {
+    color: black;
+    text-shadow: 1px 1px 10px white;
+}
+
+/* SpaceText */
+#fullpage > .section > .SpaceText {
+    position: absolute;
+    top: 380px;
+    left: 738px;
+    background: white;
+    opacity: 0.8;
+    border: 1px thin black;
+    z-index: 150;
+}
+
+#fullpage > .section > .SpaceText > p {
+    font-family: "Roboto";
+    text-shadow: 0px 0px 100px white;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#fullpage > .section > .SpaceText > p:nth-child(1) {
+    padding-top: 100px;
+    font-size: 80px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#fullpage > .section > .SpaceText > p:nth-child(2) {
+    font-size: 24px;
+    margin-bottom: 100px;
+    letter-spacing: 3px;
+}
+
+#fullpage > .section > .SpaceText > p:nth-child(3) {
+    font-size: 20px;
+    opacity: 0.9;
+    text-align: right;
+}
+
+/* Side */
+
+#fullpage > .section > .Side > ul {
+    position: fixed;
+    top: 20%;
+    right: 1%;
+    z-index: 201;
+}
+
+#fullpage > .section > .Side > ul > li {
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 6px;
+    width: 100%;
+    background: white;
+}
+
+#fullpage > .section > .Side > ul > li > a > img {
+    width: 100%;
+}
+
+#fullpage > .section > .Side > ul > li > a > span {
+    padding-left: 8px;
+}
+
+#fullpage > .section > .Side > ul > li:nth-child(1) {
+    border-top: 1px solid #525252;
+}
+
+#fullpage > .section > .Side > ul > li:nth-child(n + 1) {
+    border-bottom: 1px solid #525252;
+    border-left: 1px solid #525252;
+    border-right: 1px solid #525252;
+}
+
+/* 2nd */
+#fullpage > #page2 .SecondUp {
+    width: 74%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+#fullpage > #page2 .SecondUp > h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#fullpage > #page2 .SecondUp > ul {
+    width: 100%;
+}
+
+#fullpage > #page2 .SecondUp > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page2 .SecondUp > ul > li {
+    float: left;
+    width: 32.68%;
+    margin-top: 30px;
+}
+
+#fullpage > #page2 .SecondUp > ul > li:nth-child(1) {
+    margin-right: 0.92%
+}
+
+#fullpage > #page2 .SecondUp > ul > li:nth-child(2) {
+    margin-right: 0.92%
+}
+
+#fullpage > #page2 .SecondUp > ul > li > .Hide {
+    display: none;
+}
+
+
+#fullpage > #page2 .SecondDown {
+    width: 74%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#fullpage > #page2 .SecondDown::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft {
+    float: left;
+    width: 75%
+}
+
+#fullpage > #page2 .SecondDown > .floatleft::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Picture {
+    width: 40%;
+    float: left;
+    max-width: 350px;
+}
+
+#fullpage > #page2 .SecondDown > .floatright > .Notice_PictureLow {
+    width: 100%;
+    max-width: 350px;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text {
+    width: 50%;
+    float: right;
+    margin-left: 2%;
+    margin-right: 8%;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > h1 {
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > hr {
+    margin-bottom: 20px;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 0.9vw;
+    text-align: center;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li:nth-child(5) {
+    margin-bottom: 50px;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > span {
+    font-size: 0.7vw;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Plus {
+    display: none;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Text {
+    font-size: 16px;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Date {
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > .ViewMore {
+    text-align: center;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > .ViewMore > a {
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#fullpage > #page2 .SecondDown > .floatright {
+    float: right;
+    width: 25%;
+}
+
+#fullpage > #page2 .SecondDown > .floatright::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page2 .SecondDown > .floatright > .Notice_PictureLow {
+    float: right;
+}
+
+#fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > .ViewMore > a:hover {
+    color: saddlebrown;
+    opacity: 1;
+}
+
+/* 3nd */
+#fullpage > #page3 .AllSide { width: 100%; height: 1089px; position: relative;}
+#fullpage > #page3 .AllSide > .LeftSide { width: 72%; background: white; height: 1089px; position: absolute; top:0}
+#fullpage > #page3 .AllSide > .RightSide { width: 28%; background: #755530; height: 1089px; position: absolute; right:0}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace { position: relative; width: 100%; top:28%; }
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle { position:absolute; width: 80%; }
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle::after { content: ""; display: block; clear: both;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > div { float: left;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-LeftSpace { width: 20%; text-align: center;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-LeftSpace > a > .fa-caret-left { font-size: 200px; margin-top: 46%;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-MiddleSpace { width: 60%;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-MiddleSpace > h1 { font-size: 90px; letter-spacing: 1px;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-MiddleSpace > h2 { margin-top: 15px; font-size: 30px; letter-spacing: 1px; color:#755530;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-MiddleSpace > p:nth-child(3) { margin-top: 40px;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-MiddleSpace > p { font-size: 20px; color:#555;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-MiddleSpace > p:nth-child(5) { width: 60px; margin-top: 120px; border-bottom: 1px solid black; font-weight: bold;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-RightSpace { width: 20%; text-align: center;}
+#fullpage > #page3 .AllSide > .ThirdMiddleSpace > .ThirdTitle > .Third-RightSpace > a > .fa-caret-right { font-size: 200px; margin-top: 46%;}
+
+
+/* 풀페이지 Another */
+.fp-slides {
+    height: 88.4% !important;
+}
+
+.main_cmt {
+    width: 100%;
+     !important;
+    margin-left: 0px;
+     !important;
+}
+
+#page3, #page4 { padding: 0;}
+
+/*.fp-tableCell { vertical-align: middle; } */
+
+
+
+/* ㅡ - ㅡ - ㅡ -미디어 쿼리ㅡ - ㅡ - ㅡ - */
+
+@media all and (min-width:740px) and (max-width:1023px) {
+
+    #page1 .bg1 {
+        background: url(../images/banner/test43.jpg);
+        background-size: cover;
+    }
+
+    #page1 .bg2 {
+        background: url(../images/banner/test48.jpg);
+        background-size: cover
+    }
+
+    #page1 .bg3 {
+        background: url(../images/banner/test51.jpg);
+        background-size: cover
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .TabletView > li {
+        width: 10%;
+        font-size: 16px;
+
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .TabletView > li > a {
+        color: #755530;
+        font-family: "NanumSqaure";
+        border-bottom: 1px solid #333;
+        padding-bottom: 10%;
+    }
+
+
+    /*#fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li {
+        width: 15%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li:nth-child(1) {
+        margin-left: 22.5%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li > a:hover {
+        color: black;
+        text-shadow: 1px 1px 10px white;
+    }*/
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .TabletView {
+        display: block
+    }
+
+    /* SpaceText */
+    #fullpage > .section > .SpaceText {
+        left: 330px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(1) {
+        padding-top: 50px;
+        font-size: 42px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(2) {
+        font-size: 18px;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(3) {
+        font-size: 12px;
+    }
+
+    /* 2nd */
+    #fullpage > #page2 .SecondUp {
+        padding-top: 2%;
+    }
+
+    #fullpage > #page2 .SecondUp > h1 {
+        font-size: 3vw;
+        margin-bottom: 40%;
+    }
+
+    #fullpage > #page2 .SecondUp > hr {
+        display: none;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 1%;
+        position: relative;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > a > img {
+        width: 30%;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 36%;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > span {
+        font-size: 20px;
+        color: #333;
+        text-shadow: 0.05px 0.05px 0.05px #333;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > p:nth-child(3) {
+        padding-top: 15px;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > p {
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text {
+        width: 50%;
+        float: right;
+        margin-left: 2%;
+        margin-right: 8%;
+        margin-top: -3%;
+    }
+
+    #fullpage > #page2 .SecondDown {
+        width: 80%;
+        margin-top: 7%;
+    }
+
+    #fullpage > #page2 .SecondDown img {
+        display: none;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft {
+        width: 100%;
+        margin-right: 2%;
+    }
+
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text {
+        float: none;
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > h1 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2.5%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > hr {
+        margin-bottom: 1%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li {
+        padding: 0.5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 0.9vw;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li:nth-child(5) {
+        margin-bottom: 2%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > span {
+        font-size: 0.7vw;
+        margin-left: 40px;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Plus {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > .ViewMore {
+        display: none;
+    }
+    
+    /* 3nd */
+#fullpage > #page3 .SecondUp {
+    width: 74%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+#fullpage > #page3 .SecondUp > h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#fullpage > #page3 .SecondUp > ul {
+    width: 100%;
+}
+
+#fullpage > #page3 .SecondUp > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page3 .SecondUp > ul > li {
+    float: left;
+    width: 32.68%;
+    margin-top: 30px;
+}
+
+#fullpage > #page3 .SecondUp > ul > li:nth-child(1) {
+    margin-right: 0.92%
+}
+
+#fullpage > #page3 .SecondUp > ul > li:nth-child(2) {
+    margin-right: 0.92%
+}
+
+#fullpage > #page3 .SecondUp > ul > li > .Hide {
+    display: none;
+}
+
+
+#fullpage > #page3 .SecondDown {
+    width: 74%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#fullpage > #page3 .SecondDown::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft {
+    float: left;
+    width: 75%
+}
+
+#fullpage > #page3 .SecondDown > .floatleft::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Picture {
+    width: 40%;
+    float: left;
+    max-width: 350px;
+}
+
+#fullpage > #page3 .SecondDown > .floatright > .Notice_PictureLow {
+    width: 100%;
+    max-width: 350px;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text {
+    width: 50%;
+    float: right;
+    margin-left: 2%;
+    margin-right: 8%;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > h1 {
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > hr {
+    margin-bottom: 20px;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > ul > li {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 0.9vw;
+    text-align: center;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > ul > li:nth-child(5) {
+    margin-bottom: 50px;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > ul > li > a > span {
+    font-size: 0.7vw;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Plus {
+    display: none;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Text {
+    font-size: 16px;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Date {
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > .ViewMore {
+    text-align: center;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > .ViewMore > a {
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#fullpage > #page3 .SecondDown > .floatright {
+    float: right;
+    width: 25%;
+}
+
+#fullpage > #page3 .SecondDown > .floatright::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#fullpage > #page3 .SecondDown > .floatright > .Notice_PictureLow {
+    float: right;
+}
+
+#fullpage > #page3 .SecondDown > .floatleft > .Notice_Text > .ViewMore > a:hover {
+    color: saddlebrown;
+    opacity: 1;
+}
+    
+    
+
+    .fp-slides {
+        height: 84.2% !important;
+    }
+    .main_cmt4 { font-size: 100px;}
+    
+    #fullpage > #page3 .main_cmt > p { font-size: 200px;}
+    #fullpage > #page3 > 
+    #fullpage > #page4 .main_cmt > .onview > p { font-size: 100px;}
+
+}
+
+
+@media all and (min-width:500px) and (max-width:739px) {
+
+    #page1 .bg1 {
+        background: url(../images/banner/test62.jpg);
+        background-size: cover;
+    }
+
+    #page1 .bg2 {
+        background: url(../images/banner/test59.jpg);
+        background-size: cover
+    }
+
+    #page1 .bg3 {
+        background: url(../images/banner/test1.png);
+        background-size: cover
+    }
+
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(2) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(3) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(4) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(5) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(6) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(7) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) {
+        margin-left: 14%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li {
+        float: left;
+        width: 18%;
+    }
+
+    #fullpage > .section > .naviga > .rightNav > .NavMenu > a > img {
+        display: block;
+        width: 50px;
+        z-index: 500;
+        position: absolute;
+        top: 20px;
+        left: 90%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li {
+        width: 16%;
+    }
+
+    #MenuInside {
+        display: block;
+        position: absolute;
+        top: 125px;
+        z-index: 777;
+        width: 100%;
+        display: none;
+    }
+
+    #MenuInside > ul > li {
+        width: 100%;
+        height: 50px;
+        background: white;
+    }
+
+    #MenuInside > ul > li > a {
+        margin-left: 2%;
+        line-height: 50px;
+    }
+
+    #MenuInside > ul > li > ul {
+        position: absolute;
+        width: 100%;
+        top: 7%;
+        left: 46%;
+    }
+
+    #MenuInside > ul > li > ul > li > a {
+        float: left;
+        color: aliceblue;
+        margin-right: 3%;
+    }
+
+    #MenuInside > ul > li > ul::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #MenuInside > ul > li::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #MenuInside > ul > li {
+        text-align: center;
+    }
+
+    #MenuInside > ul > li:hover {
+        background-color: beige;
+        font-size: 24px;
+    }
+
+    /* SpaceText */
+    #fullpage > .section > .SpaceText {
+        top: 410px;
+        left: 230px;
+    }
+
+    #fullpage > .section > .SpaceText > p {
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(1) {
+        padding-top: 30px;
+        font-size: 40px;
+        margin: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(2) {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(3) {
+        font-size: 20px;
+        opacity: 0.9;
+        text-align: right;
+    }
+
+    /* 2nd */
+    #fullpage > #page2 .SecondUp {
+        padding-top: 2%;
+    }
+
+    #fullpage > #page2 .SecondUp > h1 {
+        font-size: 3vw;
+        margin-bottom: 4%;
+    }
+
+    #fullpage > #page2 .SecondUp > hr {
+        display: none;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 1%;
+        position: relative;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > a > img {
+        width: 35%;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide {
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 40%;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > span {
+        font-size: 18px;
+        color: #333;
+        text-shadow: 0.05px 0.05px 0.05px #333;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > p:nth-child(3) {
+        padding-top: 15px;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > p {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text {
+        width: 50%;
+        float: right;
+        margin-left: 2%;
+        margin-right: 8%;
+        margin-top: -3%;
+    }
+
+    #fullpage > #page2 .SecondDown {
+        width: 80%;
+        margin-top: 7%;
+    }
+
+    #fullpage > #page2 .SecondDown img {
+        display: none;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft {
+        width: 100%;
+        margin-right: 2%;
+    }
+
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text {
+        float: none;
+        width: 100%;
+        margin-top: 2.5%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > h1 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2.5%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > hr {
+        margin-bottom: 1%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li {
+        padding: 0.5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 1.2vw;
+        margin-top: 3%
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li:nth-child(5) {
+        margin-bottom: 2%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > span {
+        font-size: 1vw;
+        margin-left: 4%
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Plus {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Text {
+        font-size: 2vw;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Date {
+        margin-left: 3%;
+    }
+
+
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > .ViewMore {
+        display: none;
+    }
+
+    .fp-slides {
+        height: 100% !important;
+    }
+
+}
+
+
+@media all and (max-width:499px) {
+    #page1 .bg1 {
+        background: url(../images/banner/test2.png);
+        background-size: cover;
+    }
+
+    #page1 .bg2 {
+        background: url(../images/banner/test7.png);
+        background-size: cover
+    }
+
+    #page1 .bg3 {
+        background: url(../images/banner/test4.png);
+        background-size: cover
+    }
+
+    #navTop {
+        display: none;
+    }
+
+    .top > ul > li {
+        padding: 9px;
+        font-size: 10px;
+    }
+
+    #fullpage > .section > .naviga {
+        top: 30px;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NavigaPic > a > img {
+        position: relative;
+        top: 15px;
+        width: 130px;
+        height: 40px;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(2) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(3) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(4) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(5) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(6) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(7) {
+        display: none
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) {
+        margin-left: 12.5%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li {
+        float: left;
+        width: 18%;
+        font-size: 12px;
+    }
+
+    #fullpage > .section > .naviga > .rightNav > .NavMenu > a > img {
+        display: block;
+        width: 50px;
+        z-index: 500;
+        position: absolute;
+        top: 20px;
+        left: 84%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li {
+        width: 18%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li:nth-child(1) {
+        margin-left: 15%;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li {
+        line-height: 36px;
+    }
+
+    #fullpage > .section > .naviga > .leftNav > .NormalView > li:nth-child(1) > ul > li > a {
+        font-size: 12px;
+    }
+    
+    .Side { display: none; }
+
+    #MenuInside {
+        display: block;
+        position: absolute;
+        top: 110px;
+        z-index: 777;
+        width: 100%;
+        display: none;
+    }
+
+    #MenuInside > ul > li {
+        width: 100%;
+        height: 40px;
+        background: white;
+    }
+
+    #MenuInside > ul > li > a {
+        margin-left: 2%;
+        line-height: 40px;
+    }
+
+    #MenuInside > ul > li > ul {
+        position: absolute;
+        width: 100%;
+        top: 7%;
+        left: 46%;
+    }
+
+    #MenuInside > ul > li > ul > li > a {
+        float: left;
+        color: aliceblue;
+        margin-right: 3%;
+    }
+
+    #MenuInside > ul > li {
+        text-align: center;
+    }
+
+    #MenuInside > ul > li:hover {
+        background-color: beige;
+        font-size: 20px;
+    }
+
+    /* SpaceText */
+    #fullpage > .section > .SpaceText {
+        top: 285px;
+        left: 21%;
+    }
+
+    #fullpage > .section > .SpaceText > p {
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(1) {
+        padding-top: 10px;
+        font-size: 30px;
+        margin: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(2) {
+        font-size: 10px;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+    }
+
+    #fullpage > .section > .SpaceText > p:nth-child(3) {
+        font-size: 10px;
+        opacity: 0.9;
+        text-align: right;
+    }
+    
+    
+    /* 2nd */
+    #fullpage > #page2 .SecondUp {
+        width: 95%;
+        padding-top: 4%;
+    }
+
+    #fullpage > #page2 .SecondUp > h1 {
+        font-size: 1.5em;
+        margin-bottom: 6%;
+    }
+
+    #fullpage > #page2 .SecondUp > hr {
+        display: none;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 1%;
+        position: relative;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > a > img {
+        width: 35%;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 37%;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > span {
+        font-size: 12px;
+        color: #333;
+        text-shadow: 0.05px 0.05px 0.05px #333;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > p:nth-child(3) {
+        padding-top: 5px;
+    }
+
+    #fullpage > #page2 .SecondUp > ul > li > .Hide > p {
+        font-size: 8px;
+        padding-top: 5px;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text {
+        width: 50%;
+        float: right;
+        margin-left: 0%;
+        margin-right: 8%;
+        margin-top: -3%;
+    }
+
+    #fullpage > #page2 .SecondDown {
+        width: 95%;
+        margin-top: 4%;
+    }
+
+    #fullpage > #page2 .SecondDown img {
+        display: none;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft {
+        width: 100%;
+        margin-right: 2%;
+    }
+
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text {
+        float: none;
+        width: 100%;
+        margin-top: 2.5%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > h1 {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 2.5%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > hr {
+        margin-bottom: 1%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li {
+        font-size: 10px;
+        margin-top: 3%
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li:nth-child(5) {
+        margin-bottom: 2%;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > span {
+        font-size: 10px;
+        margin-left: 2%
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Plus {
+        display: inline-block;
+        margin-top: 0;
+        font-size: 10px;
+        color:#876c4c;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Text {
+        font-size: 10px;
+        color:#333;
+    }
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > ul > li > a > .Date {
+        margin-left: 3%;
+        font-size: 10px;
+    }
+
+
+
+    #fullpage > #page2 .SecondDown > .floatleft > .Notice_Text > .ViewMore {
+        display: none;
+    }
+    
+    
+
+    .fp-slides {
+        height: 100% !important;
+    }
+}
