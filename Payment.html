@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Gentleman 장바구니</title>
+    <title>Gentleman 로그인</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
@@ -11,8 +11,8 @@
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />  
+
     <script>
         $(function() {
             $("#header").load("header.html");
@@ -33,30 +33,6 @@
                    $("input[name=product]").prop("checked",false);
                }
             });
-            
-            /*function deleteAction() {
-                var checkRow = " ";
-                $( "input[name= ' checkRow ']:checked" ).each (function (){
-                    checkRow = checkRow + $(this).val()+" , " ;
-                });
-                checkRow = checkRow.substring(0, checkRow.lastIndexOf( ","));
-                
-                if(checkRow == '') {
-                    alert("삭제할 대상을 선택하세요.");
-                    return false;
-                }
-                
-                if(confirm("정보를 삭제 하시겠습니까?")) {
-                    
-                    var url = document.location.href;
-                    var page = $("#page").val();
-                    var saleType = $("#saleType").val();
-                    var schtype = $("#schtype").val();
-                    var schval = $("#schval").val();
-                    location.href= "${rc.contextPath}/test_proc.do?idx= "+checkRow+"&goUrl="+url+"&page="+page+"&saleType"+saleType+"schtype"+schtype+"schval="+schavl;
-                }
-            }*/
-            
         });
     </script>
     
@@ -276,7 +252,7 @@
     <div id="wrap">
         
         <div id="Pic">
-            <h1>Shopping Basket</h1>
+            <h1>Order Payment</h1>
             <p>저희 젠틀맨은 항상 최고의 품질을 유지합니다.</p>
         </div>
         
@@ -363,22 +339,22 @@
                     <ul>
                         <li>
                             <p>상품금액</p>
-                            <p>334,000</p>
+                            <p>198,000</p>
                             <p class="cal1">+</p>
                         </li>
                         <li class="Hide">
                             <p>할인금액</p>
-                            <p>0</p>
+                            <p>198,000</p>
                             <p class="cal2">+</p>
                         </li>
                         <li>
                             <p>배송비</p>
-                            <p>5,000</p>
+                            <p>2,500</p>
                             <p class="cal3">=</p>
                         </li>
                         <li>
                             <p>주문합계금액</p>
-                            <p>339,000</p>
+                            <p>223,000</p>
                         </li>
                     </ul>
                 </div>
@@ -393,7 +369,7 @@
                         <li> <span>총 상품금액</span> <span class="pay">334,000</span> </li>
                         <li> <span>총 할인금액</span> <span class="pay">0</span> </li>
                         <li> <span>총 배송비</span> <span class="pay">5,000</span> </li>
-                        <li> <span>결제예정금액</span> <span class="pay">339,000</span> </li>
+                        <li> <span>결제예정금액</span> <span class="pay">384,000</span> </li>
                     </ul>
                     <div class="Third-Button"><button class="Third-ButtonOk">결제하기</button></div>
                 </div>
