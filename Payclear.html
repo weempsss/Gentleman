@@ -58,7 +58,12 @@
         #cart > #First > ul > li:nth-child( 3 ) > p { color:black; }
         #cart > #First > ul > li:nth-child( 3 ) > span { color:black; }
         
-        #cart > #Second { width: 73%; float: left; margin-left: 3%; margin-right: 4%;}
+        #cart > #Second { width: 50%; margin-left: 17%; text-align: center; margin-top: 9%; float: left;  }
+        #cart > #Second > img { width: 50%; }
+        #cart > #Second > p { width: 100%; font-size: 20px; margin-top: 10%; letter-spacing: 1px;}
+        #cart > #Second > a > .home { width: 13%; height: 35px; margin-top: 3%; background: #755530; color:white;}
+        #cart > #Second > a > .another { width: 13%; height: 35px; background: black; color:white;}
+        
         
         @media all and (min-width:740px) and ( max-width:1023px ) {
             .Hide { display: block;}
@@ -84,11 +89,16 @@
             #cart > #First > ul > li:nth-child( 3 ) > p { color:black }
             #cart > #First > ul > li:nth-child( 3 ) > span { color:black; }
             
-            #cart > #Second { width: 90%; margin: 0 auto; float: none; margin-left: auto; margin-top: 5%; margin-right: auto;}
+            #cart > #Second { width: 90%; margin: 0 auto; float: none; margin-left: auto; margin-top: 10%; margin-right: auto; margin-bottom: 11%;}
+        #cart > #Second > img { width: 40%;  }
+        #cart > #Second > p { font-size: 20px;  }
+        #cart > #Second > a > .home { width: 13%; height: 35px; background: #755530; color:white;}
+        #cart > #Second > a > .another { width: 13%; height: 35px; background: black; color:white;}
             
         }
         
         @media all and ( max-width:739px ) {
+            body { overflow-x: hidden;}
             .Hide { display: block;}
             
             #Pic { height: 400px; }
@@ -112,7 +122,11 @@
             #cart > #First > ul > li:nth-child( 3 ) > p { color:black; }
             #cart > #First > ul > li:nth-child( 3 ) > span { color:black; }
             
-            #cart > #Second { width: 98%; margin: 0 auto; float: none; margin-left: auto; margin-top: 5%; margin-right: auto;}
+            #cart > #Second { width: 98%; margin: 0 auto; float: none; margin-left: auto; margin-top: 15%; margin-right: auto; margin-bottom: 27%; text-align: center;}
+        #cart > #Second > img { width: 40%; margin-left: 0%; margin-top: 10%;}
+        #cart > #Second > p { font-size: 16px; margin-left: 0%; margin-top: 10%;}
+        #cart > #Second > a > .home { width: 13%; height: 35px; margin-left: 0%; margin-top: 4%; background: #755530; color:white;}
+        #cart > #Second > a > .another { width: 13%; height: 35px; background: black; color:white;}
             
             input { width: 12px !important; height: 12px !important;}
         }
@@ -130,7 +144,13 @@
             #cart > #First > ul > li > .fa-user-check { font-size: 4vw; }
             #cart > #Third > .Third-Text > .Third-Button > .Third-ButtonOk { padding-bottom: 4%;}
             input { width: 10px !important; height: 10px !important;}
-            #cart > #Second { width: 98%;}
+            #cart > #Second { width: 70%; margin-left: 15%;}
+            
+            #cart > #Second { width: 98%; margin: 0 auto; float: none; margin-left: auto; margin-top: 15%; margin-right: auto; margin-bottom: 27%; text-align: center;}
+        #cart > #Second > img { width: 40%; margin-left: 0%; margin-top: 10%;}
+        #cart > #Second > p { font-size: 12px; margin-left: 0%; margin-top: 10%;}
+        #cart > #Second > a > .home { width: 20%; height: 35px; margin-left: 0%; margin-top: 4%; background: #755530; color:white;}
+        #cart > #Second > a > .another { width: 20%; height: 35px; background: black; color:white;}
         }
         
         
@@ -170,7 +190,10 @@
             </div>
             
             <div id="Second">
-                
+               <img src="images/icon/logo.png" alt="">
+                <p>저희 Gentleman을 사용해주셔서 대단히 감사합니다.</p>
+                <a href="index.html"><button class="home">홈으로</button></a>
+                <a href="Product.html"><button class="another">더보기</button></a>
             </div>
             
         </div>
