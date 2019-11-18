@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gentleman HEADER</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        /* top */
+        header>.top {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 39px;
+            z-index: 150;
+        }
+
+        header>.top>ul {
+            background-color: #262626;
+        }
+
+        header>.top>ul>li {
+            float: right;
+            font-size: 12px;
+            padding: 30px;
+            padding-top: 11px;
+            padding-bottom: 12px;
+        }
+
+        header>.top>ul>li>a {
+            color: white;
+        }
+
+        header>.top>ul>li:nth-child(1) {
+            margin-right: 5px;
+            padding-left: 3px;
+        }
+
+        header>.top>ul>li:nth-child(2) {
+            padding-left: 3px;
+        }
+
+        header>.top>ul>li:nth-child(3) {
+            padding-left: 3px;
+        }
+
+        header>.top>ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header>.top>ul>li>a:hover {
+            color: goldenrod;
+        }
+
+        /* id#nav */
+        header>.naviga {
+            background: #fafafa;
+            width: 100%;
+            height: 85px;
+            position: absolute;
+            top: 35px;
+            left: 0px;
+            z-index: 10;
+        }
+
+        header>.naviga>.leftNav {
+            float: left;
+            width: 100%;
+        }
+
+        header>.naviga>.leftNav>.NavigaPic {
+            float: left;
+        }
+
+        header>.naviga>.leftNav>.NavigaPic>a>img {
+            margin-top: 6%;
+            margin-left: 14%;
+        }
+
+        header>.naviga>.leftNav::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header>.naviga>.leftNav>.NormalView::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header>.naviga>.leftNav>.NormalView>li {
+            float: right;
+            width: 9%;
+            font-size: 1vw;
+            line-height: 85px;
+            text-align: center;
+        }
+
+        header>.naviga>.leftNav>.NormalView>li:nth-child(1) {
+            font-family: "NanumGothic ExtraBold"
+        }
+
+        header>.naviga>.leftNav>.NormalView>li:nth-child(8) {
+            font-family: "NanumGothic ExtraBold"
+        }
+
+        header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul {
+            display: none;
+            background: #75552e;
+            width: 100%;
+            position: absolute;
+            left: 0%;
+            z-index: 10;
+            height: 60px;
+        }
+
+        header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li {
+            float: left;
+            width: 10%;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li>a {
+            font-size: 18px;
+            color: white;
+            text-shadow: 0px 0px 1px black;
+        }
+
+        header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li:nth-child(1) {
+            margin-left: 30%;
+        }
+
+        header>.naviga>.leftNav>.TabletView {
+            display: none;
+        }
+
+        header>.naviga>.leftNav>.TabletView::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header>.naviga>.leftNav>.TabletView>li {
+            float: right;
+            width: 9%;
+            font-size: 1.2em;
+            line-height: 85px;
+            text-align: center;
+        }
+
+        header>.naviga>.leftNav>.TabletView>li:nth-child(1) {
+            font-family: "NanumGothic ExtraBold"
+        }
+
+        header>.naviga>.leftNav>.TabletView>li:nth-child(8) {
+            font-family: "NanumGothic ExtraBold"
+        }
+
+        header>.naviga>.leftNav>.TabletView>li:nth-child(1)>ul {
+            /*display: none;*/
+            background: #75552e;
+            width: 100%;
+            position: absolute;
+            left: 0%;
+            z-index: 10;
+            height: 60px;
+        }
+
+        header>.naviga>.leftNav>.TabletView>li:nth-child(1)>ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header>.naviga>.leftNav>.TabletView>li:nth-child(1)>ul>li {
+            float: left;
+            width: 10%;
+            /*text-align: center;*/
+            height: 60px;
+            line-height: 60px;
+        }
+
+        header>.naviga>.leftNav>.TabletView>li:nth-child(1)>ul>li>a {
+            font-size: 18px;
+            color: white;
+            text-shadow: 0px 0px 1px black;
+        }
+
+        header>.naviga>.leftNav>.TabletView>li:nth-child(1)>ul>li:nth-child(1) {
+            margin-left: 30%;
+        }
+
+        header>.naviga>.rightNav>.NavMenu>a>img {
+            display: none;
+            float: right;
+        }
+
+        header>.naviga>.rightNav>.NavMenu::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header>.naviga>.leftNav>ul>li:nth-child(1)>ul>li>a:hover {
+            color: black;
+            text-shadow: 1px 1px 10px white;
+        }
+
+        #MenuInside {
+            display: none;
+        }
+
+
+        @media all and (min-width:740px) and (max-width:1023px) {
+            header>.naviga>.leftNav>.TabletView>li {
+                width: 10%;
+                font-size: 16px;
+
+            }
+
+            header>.naviga>.leftNav>.TabletView>li>a {
+                font-family: "NanumSqaure";
+                padding-bottom: 10%;
+            }
+
+            header>.naviga>.leftNav>.NormalView {
+                display: none;
+            }
+
+            header>.naviga>.leftNav>.TabletView {
+                display: block
+            }
+        }
+
+        @media all and (min-width:500px) and (max-width:739px) {
+            header>.naviga>.leftNav>.NormalView>li:nth-child(2) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(3) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(4) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(5) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(6) {
+                display: block;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1) {
+                margin-left: 5%;
+            }
+            
+            header>.naviga>.leftNav>.NormalView { width: 70%; margin: 0 auto;}
+
+            header>.naviga>.leftNav>.NormalView>li {
+                float: right;
+                width: 15%;
+                font-size: 2.5vw;
+            }
+
+            header>.naviga>.rightNav>.NavMenu>a>img {
+                display: block;
+                width: 50px;
+                z-index: 500;
+                position: absolute;
+                top: 20px;
+                left: 90%;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li {
+                width: 16%;
+            }
+
+            #MenuInside {
+                display: block;
+                position: absolute;
+                top: 120px;
+                z-index: 777;
+                width: 100%;
+                display: none;
+            }
+
+            #MenuInside>ul>li {
+                width: 100%;
+                height: 50px;
+                background: white;
+            }
+
+            #MenuInside>ul>li>a {
+                margin-left: 2%;
+                line-height: 50px;
+            }
+
+            #MenuInside>ul>li>ul {
+                position: absolute;
+                width: 100%;
+                top: 7%;
+                left: 46%;
+            }
+
+            #MenuInside>ul>li>ul>li>a {
+                float: left;
+                color: aliceblue;
+                margin-right: 3%;
+            }
+
+            #MenuInside>ul>li>ul::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            #MenuInside>ul>li::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            #MenuInside>ul>li {
+                text-align: center;
+            }
+
+            #MenuInside>ul>li:hover {
+                background-color: beige;
+                font-size: 24px;
+            }
+
+        }
+
+        @media all and (max-width:499px) {
+            
+            header>.top>ul { text-align: right;}
+            header>.top>ul>li { font-size: 10px; padding: 10px; padding-left: 15px; padding-right: 15px;}
+
+            header>.naviga {
+                top: 30px;
+            }
+
+            header>.naviga>.leftNav>.NavigaPic>a>img {
+                position: relative;
+                top: 15px;
+                width: 130px;
+                height: 40px;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(2) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(3) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(4) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(5) {
+                display: none
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(6) {
+                display: block;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1) {
+                margin-left: 12.5%;
+            }
+
+            header>.naviga>.leftNav>.NormalView { width: 70%; margin-left: 8.5%;}
+            
+            header>.naviga>.leftNav>.NormalView>li {
+                float: right;
+                width: 20%;
+                font-size: 12px;
+                text-align: center;
+            }
+
+            header>.naviga>.rightNav>.NavMenu>a>img {
+                display: block;
+                width: 50px;
+                z-index: 500;
+                position: absolute;
+                top: 20px;
+                left: 84%;
+            }
+            
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1) {
+                margin-left: 5%;
+            }
+            
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul {
+                height: 36px;
+                line-height: 36px;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li {
+                width: 18%;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li:nth-child(1) {
+                margin-left: 10%;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li {
+                line-height: 36px;
+            }
+
+            header>.naviga>.leftNav>.NormalView>li:nth-child(1)>ul>li>a {
+                font-size: 12px;
+            }
+
+            #MenuInside {
+                display: block;
+                position: absolute;
+                top: 110px;
+                z-index: 777;
+                width: 100%;
+                display: none;
+            }
+
+            #MenuInside>ul>li {
+                width: 100%;
+                height: 40px;
+                background: white;
+            }
+
+            #MenuInside>ul>li>a {
+                margin-left: 2%;
+                line-height: 40px;
+            }
+
+            #MenuInside>ul>li>ul {
+                position: absolute;
+                width: 100%;
+                top: 7%;
+                left: 46%;
+            }
+
+            #MenuInside>ul>li>ul>li>a {
+                float: left;
+                color: aliceblue;
+                margin-right: 3%;
+            }
+
+            #MenuInside>ul>li {
+                text-align: center;
+            }
+
+            #MenuInside>ul>li:hover {
+                background-color: beige;
+                font-size: 20px;
+            }
+
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            var isToggle = false;
+            $("header > .naviga > .rightNav > .NavMenu > a > img").click(function() {
+                if (!isToggle) {
+                    $("#MenuInside").slideDown(250, "swing");
+                    $("header > .naviga > .rightNav > .NavMenu > a > img").toggleClass("on");
+                    isToggle = true;
+                } else {
+                    $("#MenuInside").slideUp(250, "swing");
+                    isToggle = false;
+                }
+                return false;
+            });
+
+            $('.naviga >.leftNav>ul>.InMenu').on({
+                mouseenter: function() {
+                    $('.naviga >.leftNav>ul>.InMenu>ul').hide();
+                    $(this).find('ul').stop().slideDown(200);
+                },
+                mouseleave: function() {
+                    $('.naviga >.leftNav>ul>.InMenu>ul').show();
+                    $('.naviga >.leftNav>ul>.InMenu>ul').stop().slideUp(200);
+                }
+            });
+
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <!-- 헤더구역    -->
+    <header>
+        <div class="top">
+            <ul>
+                <li><a href="Login.html">로그인</a></li>
+                <li><a href="Join.html">회원가입</a></li>
+                <li><a href="Mypage.html">마이페이지</a></li>
+                <li><a href="Cart.html">장바구니</a></li>
+            </ul>
+        </div>
+
+
+        <div class="naviga">
+            <div class="leftNav">
+                <div class="NavigaPic">
+                    <a href="index.html"><img src="images/icon/logo.png" alt="로고" /></a>
+                </div>
+                <ul class="NormalView">
+                    <li class="InMenu"><a href="Community.html">커뮤니티</a></li>
+                    <li><a href="Oxford.html">OXFORD</a></li>
+                    <li><a href="Boots.html">BOOTS</a></li>
+                    <li><a href="Snekers.html">SNEAKERS</a></li>
+                    <li><a href="Product.html">ROAFER</a></li>
+                    <li><a href="Guide.html">회사소개</a></li>
+                </ul>
+
+                <ul class="TabletView">
+                   <li><a href="Community.html">커뮤니티</a></li>
+                    <li><a href="Oxford.html">옥스포드</a></li>
+                    <li><a href="Boots.html">부츠</a></li>
+                    <li><a href="Snekers.html">스니커즈</a></li>
+                    <li><a href="Product.html">로퍼</a></li>
+                    <li><a href="Guide.html">회사소개</a></li>
+                </ul>
+            </div>
+
+            <div class="rightNav">
+                <div class="NavMenu">
+                    <a href="#"><img src="images/icon/MenuBar.png" alt="메뉴아이콘"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메뉴 아이콘 -->
+        <div id="MenuInside">
+            <ul>
+                <li>
+                    <a href="#">로퍼</a>
+                </li>
+                <li>
+                    <a href="#">스니커즈</a>
+                </li>
+                <li>
+                    <a href="#">부츠</a>
+                </li>
+                <li>
+                    <a href="#">옥스퍼드</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+</body></html>

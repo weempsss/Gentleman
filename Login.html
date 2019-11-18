@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Gentleman 로그인</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />  
+</head>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    
+    <style>
+        #Pic { background: url(images/login2.jpg); background-attachment: fixed; background-size: cover; width: 100%; height: 550px; overflow: hidden; }
+        #Pic > h1 { width: 100%; text-align: center; color:white; font-size: 30px; position: relative; top:50%;}
+        #Pic > p { width: 100%; text-align: center; color:white; position: relative; top:51%; font-size: 24px;}
+        
+        #login { width: 30%; margin: 0 auto; margin-top: 7%; margin-bottom: 5%; border: 1px solid black; padding: 50px;}
+        #login > .High {  width: 100%; margin: 0 auto; text-align: center; padding-top: 3%; padding-bottom: 3%; border-bottom: 1px solid black;}
+        #login > .High > h1 { font-size: 2.5vw; letter-spacing: 2px; color:#333; margin-bottom: 6%;}
+        #login > .Middle .id { text-indent: 5px;}
+        #login > .Middle .pw { text-indent: 5px;}
+        #login > .Middle { position: relative; width: 100%; margin: 0 auto; text-align: left; margin-top: 6%;}
+        #login > .Middle > input { width: 70%; height: 40px; line-height: 40px; margin-top: 1%;}
+        #login > .Middle > .clear { position: absolute; top:2.5%; width: 100px; height: 86px; left: 75%; font-size: 1vw; color: white; background: #755530; border: none;}
+        #login > .Middle::after { content: ""; display: block; clear: both;}
+        #login > .Middle > .find::after { content: ""; display: block; clear: both; }
+        #login > .Middle > .find > a > p { float: left; margin-top: 3%;}
+        #login > .Middle > .find > a > p > span { font-size: 1vw;}
+        #login > .Middle > .find > a > .interval { padding-left: 5%;}
+        #login > .Low { width: 100%; margin: 0 auto; text-align: center; margin-top: 10%;}
+        #login > .Low > .GoJoin { width: 100%; height: 40px; line-height: 40px; background: none; font-weight: 500; color: #333;}
+        
+        @media all and (min-width:1376px) and (max-width:1685px) {
+            #Pic { height: 500px; }
+            #login { width: 40%;}
+            #login > .High > h1 { font-size: 3vw;}
+            #login > .Middle > .clear { left:77.5%;}
+        }
+        @media all and (min-width:1116px) and (max-width:1375px) {
+            #Pic { height: 450px; }
+            #login { width: 50%;}
+            #login > .High > h1 { font-size: 4vw;}
+            #login > .Middle > .clear { left:77.5%;}
+        }
+        @media all and (min-width:740px) and (max-width:1115px) {
+            #Pic { height: 400px; }
+            #login { width: 60%;}
+            #login > .High > h1 { font-size: 4.5vw;}
+            #login > .Middle > .clear { left:77.5%;}
+        }
+        @media all and (max-width:739px) {
+            #Pic { height: 400px; }
+            #login { width: 80%;}
+            #login > .High > h1 { font-size: 5vw;}
+            #login > .Middle > input { width: 100%;}
+            #login > .Middle > .clear { position:static; left:77.5%; width: 100%; height: 40px; line-height: 40px; margin-top: 3%;}
+            #login > .Middle > .find > a > p { width: 23%;}
+            #login > .Middle > .find > a > .interval { width: 33%;}
+            #login > .Middle > .find > a > p > span { font-size: 2vw;}
+            .fa-chevron-circle-right { font-size: 2vw; margin-right: 3%;}
+        }
+        @media all and (max-width:499px) {
+            #Pic { height: 300px;}
+            #Pic > h1 { font-size: 24px; top:58%; }
+            #Pic > p { top:59%; font-size: 16px; }
+            #login { width: 96%; padding: 25px;}
+            #login > .Middle > .find > a > p { width: 25%;}
+            #login > .Middle > .find > a > .interval { width: 40%;}
+        }
+        
+        
+    </style>
+<body>
+    <div id="header"></div>
+    <div id="wrap">
+    
+        <div id="Pic">
+            <h1>Member Login</h1>
+            <p>저희 젠틀맨은 항상 최고의 품질을 유지합니다.</p>
+        </div>
+        
+            <div id="login">
+                <div class="High">
+                    <h1>LOGIN</h1>
+                </div>
+                <div class="Middle">
+                    <input type="text" name="id" placeholder="아이디를 입력하세요" class="id"><br>
+                    <input type="password" name="pw" placeholder="비밀번호를 입력하세요" class="pw">
+                    <button class="clear">로그인</button>
+                    <div class="find">
+                        <a href="#"><p>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span>아이디 찾기</span>
+                            </p></a>
+                        <a href="#"><p class="interval">
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span>비밀번호 찾기</span>
+                            </p></a>
+                    </div>
+                    
+                </div>
+                <div class="Low">
+                    <a href="#"><button class="GoJoin">회원가입 바로가기</button></a>
+                </div>
+            </div>
+        
+    <footer id="footer"></footer>
+    </div>
+</body>
+</html>
